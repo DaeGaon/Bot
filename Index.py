@@ -2,8 +2,6 @@ import discord
 import asyncio
 from discord.ext import commands
 from discord.ext.commands import bot
-from bs4 import BeautifulSoup
-import requests
 import os
 
 bot = commands.Bot(command_prefix='~')
