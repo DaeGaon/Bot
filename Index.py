@@ -4,6 +4,7 @@ from discord.ext import commands
 from discord.ext.commands import bot
 from bs4 import BeautifulSoup
 import requests
+import os
 
 bot = commands.Bot(command_prefix='~')
 
@@ -16,5 +17,5 @@ async def on_ready():
 async def 롤(ctx, message):
 	await ctx.send('https://www.op.gg/summoner/userName='+ message)
 
-
-bot.run('Njc5NjgyODU2Njk1NDk2Nzgy.Xk06CQ.h8dRIN5br9DExR5rnl8kkrJbwCg')
+acess_token = os.environ["Bot_Token"]
+bot.run(acess_token)
